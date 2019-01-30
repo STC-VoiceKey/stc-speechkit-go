@@ -9,11 +9,7 @@
 
 package cloud_tts
 
-type SynthesizeText struct {
+type WebSocketServerConfigurationResponse struct {
 
-	// Type of content
-	Mime string `json:"mime"`
-
-	// Text for synthesize
-	Value string `json:"value"`
+	Url string `json:"url,omitempty"`
 }
