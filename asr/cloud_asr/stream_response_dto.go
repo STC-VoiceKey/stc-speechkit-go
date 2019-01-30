@@ -9,11 +9,7 @@
 
 package cloud_asr
 
-type AudioFileDto struct {
+type StreamResponseDto struct {
 
-	// Binary audio file as Base64 string
-	Data string `json:"data"`
-
-	// Audio file mime type
-	Mime string `json:"mime,omitempty"`
+	Url string `json:"url,omitempty"`
 }

@@ -9,11 +9,14 @@
 
 package cloud_asr
 
-type AudioFileDto struct {
+type AdvancedRecognitionRequestDto struct {
+
+	// Recognize with package
+	PackageId string `json:"package_id,omitempty"`
+
+	// Specific channels to process
+	Channels []int32 `json:"channels,omitempty"`
 
 	// Binary audio file as Base64 string
 	Data string `json:"data"`
-
-	// Audio file mime type
-	Mime string `json:"mime,omitempty"`
 }
